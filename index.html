@@ -11,9 +11,10 @@
 	<title>Bicycle Retro</title>
 </head>
 <body>
-	<div class="top">
+	<section class="top">
+		<img class="logo" src="img/Logo.png" alt="Logo">
 		<nav>
-		  <a href="#" class="menu-trigger">Menu</a>
+		  <a href="#" class="menu-trigger"><span></span></a>
 		  <ul>
 		    <li><a href="#">About us</a></li>
 		    <li><a href="#">Work</a></li>
@@ -21,7 +22,29 @@
 		    <li><a href="#">Contact</a></li>
 		  </ul>
 		</nav>
-	</div>
 
+	</section>
+
+	
+	
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script>
+		$(document).ready(function() {
+			if ($(".top").width()>900) {
+				$(".top").height($(".top").width()/2);
+			}
+			else {
+				$(".top").height($(".top").width());
+			}
+			$(".menu-trigger").click(function(event) {
+				if ($(".menu-trigger").hasClass('menu-trigger-active')) {
+					$(".menu-trigger").removeClass('menu-trigger-active')}
+				else {
+					$(".menu-trigger").addClass('menu-trigger-active')}
+			});
+		});
+	</script>
 </body>
 </html>

@@ -14,21 +14,16 @@ body
 
 p
 	margin: 0
-
-/*кастомизация адаптивного меню*/
-nav
-	background-color: transparent
-	text-align: center
-	a
-		color: $gray-dark
-	ul
-		margin: 0
-		padding: 0
-	#space
-		margin-left: 100px
 	
 .top
-	min-height: 100vh
+	position: relative
 	background-image: url("../img/top.jpg")
-	background-repeat: no-repeat
 	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	.logo
+		position: absolute
+		z-index: 1
+		left: 50%
+		top: 35px
+		transform: translateX(-50%)

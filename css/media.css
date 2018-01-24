@@ -1,3 +1,10 @@
-
-
-/*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 900px) {
+  .top {
+    background-image: url("../img/top_small.jpg");
+  }
+}
+@media screen and (max-width: 630px) {
+  .top .logo {
+    top: 20px;
+  }
+}

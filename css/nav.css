@@ -1,6 +1,13 @@
 nav {
+  background-color: transparent;
+  text-align: center;
+  padding-top: 45px;
   width: 100%;
-  background-color:#65A8A6;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -8,30 +15,119 @@ nav ul li {
 }
 
 nav a {
-  color:#F8ECC2;
+  color: #353638;
   display:block;
   text-decoration: none;
   padding:20px 30px;
  }
 
-nav a:hover {
-  background: #E65540;
+.menu-trigger {
+  display:none;
+  color:#353638;
+}
+
+#space {
+  margin-left: 180px;
 }
 
 .menu-trigger {
-  display:none;
-  color:#F8ECC2;
+  position: relative;
+  overflow: hidden;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+ transition: background 0.3s;
 }
 
-@media screen and (max-width:500px) {
+.menu-trigger:focus {
+  outline: none;
+}
+
+.menu-trigger span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  right: 0px;
+  height: 4px;
+  background: #353638;
+}
+
+.menu-trigger span::before,
+.menu-trigger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #353638;
+  content: "";
+}
+
+.menu-trigger span::before {
+  top: -15px;
+}
+
+.menu-trigger span::after {
+  bottom: -15px;
+}
+
+.menu-trigger-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-trigger-active span {
+  background-color: transparent;
+}
+
+.menu-trigger-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+ -ms-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+}
+
+@media screen and (max-width:630px) {
   .menu-trigger {
-    display:block;
+    display: inline-block;
   }
+
+  nav{
+    text-align: left;
+  }
+
   nav ul li {
     display:block;
-    border-top:1px #79896D solid;    
+    border-top:1px #79896D solid;
+    background-color: #fff;
   }
+
+  nav ul:last-child{
+    border-bottom:1px #79896D solid;
+  }
+
   nav ul {
     display:none;
+    margin-top: 20px;
+  }
+
+  #space {
+    margin-left: 0;
   }
 }
