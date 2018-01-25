@@ -8,13 +8,26 @@ body {
   color: #848789;
   max-width: 1600px;
   overflow-x: hidden;
-  line-height: 1.5;
+  line-height: 2;
   font-family: "Lato Regular";
   margin: 0 auto;
+  font-size: 16px;
 }
 
 p {
   margin: 0;
+}
+
+.article {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.article h2 {
+  text-transform: uppercase;
+  font-family: "Lato Bold";
+  font-size: 18px;
+  color: #353638;
 }
 
 .top {
@@ -23,6 +36,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "Lato Bold";
 }
 .top .logo {
   position: absolute;
@@ -31,4 +45,20 @@ p {
   top: 35px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.about_us {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+.about_us .article p {
+  font-size: 18px;
+}
+
+.bike1-img {
+  position: relative;
+  width: 62.5%;
+}
+.bike1-text {
+  width: 37.5%;
 }

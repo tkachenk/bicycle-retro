@@ -8,22 +8,47 @@ body
 	color: $gray
 	max-width: 1600px
 	overflow-x: hidden
-	line-height: 1.5
+	line-height: 2
 	font-family: "Lato Regular"
 	margin: 0 auto
+	font-size: 16px
 
 p
 	margin: 0
-	
+
+.article
+	max-width: 1000px
+	margin: 0 auto
+	text-align: center
+	h2
+		text-transform: uppercase
+		font-family: "Lato Bold"
+		font-size: 18px
+		color: $gray-dark
+
 .top
 	position: relative
 	background-image: url("../img/top.jpg")
 	background-position: center
 	background-size: cover
 	background-repeat: no-repeat
+	font-family: "Lato Bold"
 	.logo
 		position: absolute
 		z-index: 1
 		left: 50%
 		top: 35px
 		transform: translateX(-50%)
+
+.about_us
+	padding: 100px 0
+	background-color: $gray-light
+	.article p
+		font-size: 18px
+
+.bike1
+	&-img
+		position: relative
+		width: 62.5%
+	&-text
+		width: 37.5%
