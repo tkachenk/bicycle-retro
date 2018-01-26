@@ -8,13 +8,21 @@ body
 	color: $gray
 	max-width: 1600px
 	overflow-x: hidden
-	line-height: 2
+	line-height: 0
 	font-family: "Lato Regular"
 	margin: 0 auto
 	font-size: 16px
 
+p,h1,h2,h3,h4,h5,h6,a 
+	line-height: 1
+
 p
 	margin: 0
+	line-height: 2
+
+.img-fluid
+	width: 100%
+	height: auto
 
 .article
 	max-width: 1000px
@@ -25,6 +33,8 @@ p
 		font-family: "Lato Bold"
 		font-size: 18px
 		color: $gray-dark
+	p
+		font-size: 16px
 
 .top
 	position: relative
@@ -47,8 +57,33 @@ p
 		font-size: 18px
 
 .bike1
+	padding-bottom: 100px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
 	&-img
 		position: relative
-		width: 62.5%
+		width: 66.7%
 	&-text
-		width: 37.5%
+		width: 33.3%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		.article
+			width: 400px
+			margin: 0 auto
+			margin-top: 50px
+			@media screen and (max-width: 1300px)
+				margin-top: 20px
+			p
+				text-align: left
+
+

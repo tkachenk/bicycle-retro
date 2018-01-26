@@ -8,14 +8,24 @@ body {
   color: #848789;
   max-width: 1600px;
   overflow-x: hidden;
-  line-height: 2;
+  line-height: 0;
   font-family: "Lato Regular";
   margin: 0 auto;
   font-size: 16px;
 }
 
+p, h1, h2, h3, h4, h5, h6, a {
+  line-height: 1;
+}
+
 p {
   margin: 0;
+  line-height: 2;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 .article {
@@ -28,6 +38,9 @@ p {
   font-family: "Lato Bold";
   font-size: 18px;
   color: #353638;
+}
+.article p {
+  font-size: 16px;
 }
 
 .top {
@@ -55,10 +68,51 @@ p {
   font-size: 18px;
 }
 
+.bike1 {
+  padding-bottom: 100px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .bike1-img {
   position: relative;
-  width: 62.5%;
+  width: 66.7%;
 }
 .bike1-text {
-  width: 37.5%;
+  width: 33.3%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bike1-text .article {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1300px) {
+  .bike1-text .article {
+    margin-top: 20px;
+  }
+}
+.bike1-text .article p {
+  text-align: left;
 }

@@ -1,7 +1,47 @@
+@media screen and (max-width: 1200px)
+	.article 
+		h2
+			font-size: 16px
+		p
+			font-size: 14px
+			line-height: 1.5
+
+	.about_us .article p 
+		font-size: 16px
+
+	.bike1 .article
+		margin-top: 10px
+		width: 280px
+
+
 @media screen and (max-width: 900px)
 	.top
 		background-image: url("../img/top_small.jpg")
+	.bike1-img, .bike1-text
+		width: 100%
+	.bike1-text
+		flex-direction: row
+		align-items: flex-start
+		.article
+			width: 100%
+	.about_us
+		padding: 50px 0
 
 @media screen and (max-width: 630px)
 	.top .logo
 		top: 20px
+	.article
+		h2
+			font-size: 14px
+		p
+			font-size: 12px
+	.about_us .article p
+		font-size: 14px
+	.bike1-text .article-img
+		display: none
+	.bike1-text .article
+		width: 90%
+
+@media screen and (max-width: 550px)
+	.bike1-text .article
+		width: 90%
