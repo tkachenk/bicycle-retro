@@ -14,7 +14,7 @@
 		width: 280px
 
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 920px)
 	.top
 		background-image: url("../img/top_small.jpg")
 	.about_us
@@ -28,6 +28,8 @@
 			width: 45%
 		.article-img
 			width: 50%
+			&:before
+				display: none
 
 	.bike2
 		.article
@@ -35,7 +37,18 @@
 		.article-img
 			align-self: flex-end
 			order: 1
-
+		
+	.bike3
+		.bike1-img
+			width: 50%
+			order: 2
+		.bike3-img
+			order: 3
+		.bike1-text
+			order: 1
+			.article-img
+				align-self: flex-end
+		
 @media screen and (max-width: 630px)
 	.top .logo
 		top: 20px
@@ -56,6 +69,15 @@
 			order: 2
 		.bike1-img
 			order: 1
+
+	.bike3
+		.bike1-img
+			width: 100%
+			order: 1
+		.bike1-text
+			order: 2
+		.bike3-img
+			display: none
 
 @media screen and (max-width: 550px)
 	.bike1-text .article

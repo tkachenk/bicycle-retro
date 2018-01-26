@@ -46,7 +46,9 @@
 					<h2>Vintage Oliva</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 				</div>
-				<img src="img/Bike1.2.jpg" alt="Bike" class="img-fluid article-img">
+				<div class="article-img">
+					<img src="img/Bike1.2.jpg" alt="Bike" class="img-fluid">
+				</div>
 			</div>
 		</div>
 
@@ -57,7 +59,9 @@
 					<h2>La Boriosa</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 				</div>
-				<img src="img/Bike2.2.jpg" alt="Bike" class="img-fluid article-img">
+				<div class="article-img">
+					<img src="img/Bike2.2.jpg" alt="Bike" class="img-fluid">
+				</div>
 			</div>
 			<div class="bike1-img">
 				<img src="img/Bike2.1.jpg" alt="Bike" class="img-fluid">
@@ -65,8 +69,26 @@
 			</div>
 		</div>
 
-		<div class="bike3">
+		<div class="bike1 bike3">
+			<div class="bike1-img">
+				<img id="bike3" src="img/Bike3.1.jpg" alt="Bike" class="img-fluid">
+				<img src="img/bicycles.png" alt="Handcrafted Vintage" class="bike1-img-logo">
+			</div>
 
+			<div class="bike1-text">
+				<div class="article">
+					<img src="img/Icon-3.png" alt="La Boriosa" class="icon">
+					<h2>Retro Bike - M. Hulot</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="article-img">
+					<img src="img/Bike3.2.jpg" alt="Bike" class="img-fluid ">
+				</div>
+			</div>
+
+			<div class="bike1-img bike3-img">
+				<img src="img/Bike3.3.jpg" alt="Bike" class="img-fluid">
+			</div>
 		</div>
 	</section>
 	
@@ -81,6 +103,11 @@
 			else {
 				$(".top").height($(".top").width());
 			}
+
+			if ($("body").width()<630) {
+				$("#bike3").attr("src","img/Bike3.1small.jpg")
+			}
+
 			$(".menu-trigger").click(function(event) {
 				if ($(".menu-trigger").hasClass('menu-trigger-active')) {
 					$(".menu-trigger").removeClass('menu-trigger-active')}

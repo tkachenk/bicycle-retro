@@ -97,7 +97,7 @@ p {
 }
 .bike1-img {
   position: relative;
-  width: 66.7%;
+  width: 66.6%;
 }
 .bike1-img-logo {
   position: absolute;
@@ -134,4 +134,28 @@ p {
 }
 .bike1-text .article p {
   text-align: left;
+}
+.bike1-text .article-img {
+  position: relative;
+}
+.bike1-text .article-img::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 10px;
+  background-image: url("../img/article_arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bike3 .bike1-img {
+  width: 33.3%;
+}
+.bike3 .icon {
+  max-height: 32px;
 }
