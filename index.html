@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/slick.min.css"/>
+	<link rel="stylesheet" href="css/slick-theme.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<title>Bicycle Retro</title>
@@ -92,9 +94,64 @@
 		</div>
 	</section>
 	
+	<section class="swipe">	
+		<div class="slider">
+
+		  <div class="slide">
+		  	<div class="article">
+					<img src="img/Icon-4.png" alt="Twiter" class="icon">
+					<h2>AOD New York  @aod <span>/ 35 min</span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+				</div>
+			</div>
+
+		  <div class="slide">
+		  	<div class="article">
+					<img src="img/facebook.png" alt="Facebook" class="icon">
+					<h2>Zoliad Los Angeles @zoliad <span>/ 17 min</span></h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+			</div>
+
+		  <div class="slide">
+  	  	<div class="article">
+  				<img src="img/pinteres.png" alt="Pinteres" class="icon">
+  				<h2>Jose Pit New Jersie @josepit <span>/ 54 min</span></h2>
+  				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  			</div>
+		  </div>
+
+		</div>
+	</section>
+
+	<section class="gallery">
+
+		<div class="gallery-left">
+			<div class="gallery-block">
+				<img src="img/Shop1.jpg" alt="saddle" class="img-fluid">
+				<img src="img/Shop3.jpg" alt="saddle" class="img-fluid">
+			</div>
+			<img src="img/Shop2.jpg" alt="saddle" class="img-fluid">
+		</div>
+
+		<div class="gallery-center">
+			<img src="img/Shop4.jpg" alt="Wheel" class="img-fluid">
+			<img src="img/Shop6.jpg" alt="Wheel" class="img-fluid">
+		</div>
+
+		<div class="gallery-right">
+			<img src="img/Shop5.jpg" alt="Shop" class="img-fluid">
+			<div class="gallery-block">
+				<img src="img/Shop8.jpg" alt="saddle" class="img-fluid">
+				<img src="img/Shop7.jpg" alt="Bag" class="img-fluid">
+			</div>
+		</div>
+
+	</section>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/nav.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			if ($(".top").width()>900) {
@@ -114,6 +171,12 @@
 				else {
 					$(".menu-trigger").addClass('menu-trigger-active')}
 			});
+
+			$(".slider").slick({
+			    dots: true,
+			    arrows: false,
+			    draggable: true
+			  });
 		});
 	</script>
 </body>

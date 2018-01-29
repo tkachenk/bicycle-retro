@@ -121,3 +121,62 @@ p
 	.icon
 		max-height: 32px
 
+.swipe
+	padding: 100px 0
+	.slick-dots button
+		background-image: url("../img/Ellipse.png")
+		background-repeat: no-repeat
+		background-position: center
+	.slick-active button
+		background-image: url("../img/Ellipse_active.png")
+	.slick-dots li button::before
+		content: ""
+	.slide .article
+		h2
+			font-family: "Lato Light"
+			text-transform: none
+			font-size: 18px
+			span
+				color: $gray
+		p
+			font-family: "Lato Italic" 
+			font-size: 24px
+			line-height: 1.5
+		.icon
+			display: inline-block
+			max-height: 32px
+		&:after
+			display: none
+
+.gallery
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	&-left, &-center, &-right
+		width: 33.3%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	&-left
+		flex-direction: column
+	&-block
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+	&-center
+		flex-direction: row
+		img
+			width: 50%
+	&-right
+		flex-direction: column
+		
