@@ -174,24 +174,24 @@ p {
 .swipe .slick-dots li button::before {
   content: "";
 }
-.swipe .slide .article h2 {
+.swipe .article h2 {
   font-family: "Lato Light";
   text-transform: none;
   font-size: 18px;
 }
-.swipe .slide .article h2 span {
+.swipe .article h2 span {
   color: #848789;
 }
-.swipe .slide .article p {
+.swipe .article p {
   font-family: "Lato Italic";
   font-size: 24px;
   line-height: 1.5;
 }
-.swipe .slide .article .icon {
+.swipe .article .icon {
   display: inline-block;
   max-height: 32px;
 }
-.swipe .slide .article:after {
+.swipe .article:after {
   display: none;
 }
 
@@ -242,7 +242,7 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.gallery-center img {
+.gallery-center .img-wrap {
   width: 50%;
 }
 .gallery-right {
@@ -250,4 +250,59 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.gallery .img-wrap {
+  position: relative;
+  width: 100%;
+}
+.gallery .img-wrap-active {
+  background-color: rgba(100, 194, 158, 0.8);
+}
+.gallery .img-wrap-cover {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  height: 0;
+}
+
+.discover {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #282f35;
+}
+.discover .link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #848789;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 100px 0;
+}
+.newsletter img, .newsletter form {
+  margin-left: auto;
+  margin-right: auto;
+}
+.newsletter h3 {
+  color: #848789;
+  font-size: 24px;
+  font-family: "Lato Light";
+  font-style: italic;
+}
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #d3d7d9;
+  font-family: "Lato Italic";
+}
+.newsletter button {
+  font-family: "Lato Light";
+  border: none;
+  background-color: #64c29e;
+  padding: 11px 30px;
+  color: #ffffff;
 }

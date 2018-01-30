@@ -131,7 +131,7 @@ p
 		background-image: url("../img/Ellipse_active.png")
 	.slick-dots li button::before
 		content: ""
-	.slide .article
+	.article
 		h2
 			font-family: "Lato Light"
 			text-transform: none
@@ -175,8 +175,56 @@ p
 		flex-direction: row
 	&-center
 		flex-direction: row
-		img
+		.img-wrap
 			width: 50%
 	&-right
 		flex-direction: column
-		
+	.img-wrap
+		position: relative
+		width: 100%
+	.img-wrap-active
+		background-color: rgba(100, 194, 158, 0.8)
+		//background-image: url("../img/Icon-shop.png")
+		//background-position: center
+		//background-repeat: no-repeat
+	.img-wrap-cover
+		position: absolute
+		width: 100%
+		min-height: 100%
+		left: 0
+		height: 0
+
+.discover
+	padding: 50px 0
+	text-align: center
+	background-color: #282f35
+	.link
+		display: inline-block
+		text-decoration: none
+		padding: 10px 40px
+		text-transform: uppercase
+		color: $white
+		border: 1px solid $gray
+
+.newsletter
+	text-align: center
+	padding: 100px 0
+	img, form
+		margin:
+			left: auto
+			right: auto
+	h3
+		color: $gray
+		font-size: 24px
+		font-family: "Lato Light"
+		font-style: italic
+	input
+		padding: 10px
+		border: 1px solid #d3d7d9
+		font-family: "Lato Italic"
+	button
+		font-family: "Lato Light"
+		border: none
+		background-color: #64c29e
+		padding: 11px 30px
+		color: $white

@@ -13,6 +13,11 @@
 		margin-top: 10px
 		width: 280px
 
+	.swipe .article
+		max-width: 600px
+		p
+			font-size: 16px
+
 
 @media screen and (max-width: 920px)
 	.top
@@ -48,6 +53,12 @@
 			order: 1
 			.article-img
 				align-self: flex-end
+
+	.swipe
+		padding: 50px 0
+	.swipe .article
+		h2, p
+			font-size: 14px
 		
 @media screen and (max-width: 630px)
 	.top .logo
@@ -78,6 +89,11 @@
 			order: 2
 		.bike3-img
 			display: none
+
+	.gallery
+		flex-direction: column
+		&-left, &-center, &-right
+			width: 100%
 		
 
 @media screen and (max-width: 550px)

@@ -128,25 +128,61 @@
 
 		<div class="gallery-left">
 			<div class="gallery-block">
-				<img src="img/Shop1.jpg" alt="saddle" class="img-fluid">
-				<img src="img/Shop3.jpg" alt="saddle" class="img-fluid">
+				<div class="img-wrap">
+					<div class="img-wrap-cover"></div>
+					<img src="img/Shop1.jpg" alt="saddle" class="img-fluid">
+				</div>
+				<div class="img-wrap">
+					<div class="img-wrap-cover"></div>
+					<img src="img/Shop3.jpg" alt="saddle" class="img-fluid">	
+				</div>
 			</div>
-			<img src="img/Shop2.jpg" alt="saddle" class="img-fluid">
+			<div class="img-wrap">
+				<div class="img-wrap-cover"></div>
+				<img src="img/Shop2.jpg" alt="saddle" class="img-fluid">
+			</div>
 		</div>
 
 		<div class="gallery-center">
-			<img src="img/Shop4.jpg" alt="Wheel" class="img-fluid">
-			<img src="img/Shop6.jpg" alt="Wheel" class="img-fluid">
-		</div>
-
-		<div class="gallery-right">
-			<img src="img/Shop5.jpg" alt="Shop" class="img-fluid">
-			<div class="gallery-block">
-				<img src="img/Shop8.jpg" alt="saddle" class="img-fluid">
-				<img src="img/Shop7.jpg" alt="Bag" class="img-fluid">
+			<div class="img-wrap">
+				<div class="img-wrap-cover"></div>
+				<img src="img/Shop4.jpg" alt="Wheel" class="img-fluid">
+			</div>
+			<div class="img-wrap">
+				<div class="img-wrap-cover"></div>
+				<img src="img/Shop6.jpg" alt="Wheel" class="img-fluid">
 			</div>
 		</div>
 
+		<div class="gallery-right">
+			<div class="img-wrap">
+				<div class="img-wrap-cover"></div>
+				<img src="img/Shop5.jpg" alt="Shop" class="img-fluid">
+			</div>
+		<div class="gallery-block">
+				<div class="img-wrap">
+					<div class="img-wrap-cover"></div>
+					<img src="img/Shop8.jpg" alt="saddle" class="img-fluid">
+				</div>
+				<div class="img-wrap">
+					<div class="img-wrap-cover"></div>
+					<img src="img/Shop7.jpg" alt="Bag" class="img-fluid">
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="discover">
+		<a href="#" class="link">Discover The Shop</a>
+	</section>
+
+	<section class="newsletter">
+		<img src="img/Logo.png" alt="Logo">
+		<h3>Stay on the saddle!</h3>
+		<form action="php/mailer.php">
+			<input type="text" placeholder="enter your email..">
+			<button>GO</button></form>
 	</section>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -177,6 +213,14 @@
 			    arrows: false,
 			    draggable: true
 			  });
+
+			$( ".gallery img" ).hover(
+			  function() {
+			    $(this).siblings().addClass('img-wrap-active');
+			  }, function() {
+			   	//$( this ).parent().removeClass('img-wrap-active');
+			  }
+			);
 		});
 	</script>
 </body>

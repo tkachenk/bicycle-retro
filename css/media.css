@@ -15,6 +15,13 @@
     margin-top: 10px;
     width: 280px;
   }
+
+  .swipe .article {
+    max-width: 600px;
+  }
+  .swipe .article p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 920px) {
   .top {
@@ -81,6 +88,14 @@
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
+
+  .swipe {
+    padding: 50px 0;
+  }
+
+  .swipe .article h2, .swipe .article p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 630px) {
   .top .logo {
@@ -130,6 +145,16 @@
   }
   .bike3 .bike3-img {
     display: none;
+  }
+
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery-left, .gallery-center, .gallery-right {
+    width: 100%;
   }
 }
 @media screen and (max-width: 550px) {
